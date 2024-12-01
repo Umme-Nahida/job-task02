@@ -9,7 +9,7 @@ const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [dropdown, setDropdown] = useState('')
 
-    // Function to toggle dropdown
+    // handle toggle dropdown
     const handleDropdown = (menu) => {
         setDropdown(dropdown === menu ? "" : menu);
     };
