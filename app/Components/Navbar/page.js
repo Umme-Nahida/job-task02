@@ -84,7 +84,7 @@ const Navbar = () => {
 
                     {/* Mobile Menu */}
                     {isMenuOpen && (
-                        <div className="md:hidden bg-white shadow-md">
+                        <div className="lg:hidden bg-white shadow-md">
                             <Link href="/" className="block px-4 py-2 hover:bg-teal-100">Home</Link>
                             <div className="relative">
                                 <button className="w-full text-left px-4 py-2 hover:bg-teal-100">Courses</button>
