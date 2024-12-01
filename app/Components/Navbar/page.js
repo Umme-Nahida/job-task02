@@ -50,6 +50,7 @@ const Navbar = () => {
                                 <div className={`absolute left-0 ${dropdown === 'blogs' ? 'group-hover:block' : 'hidden'} bg-white shadow-lg rounded-md py-2`}>
                                     <Link href="/blog1" className="block px-4 py-2 hover:bg-teal-100">Blog 1</Link>
                                     <Link href="/blog2" className="block px-4 py-2 hover:bg-teal-100">Blog 2</Link>
+                                    <Link href="/blog2" className="block px-4 py-2 hover:bg-teal-100">Blog 3</Link>
                                 </div>
                             </div>
 
