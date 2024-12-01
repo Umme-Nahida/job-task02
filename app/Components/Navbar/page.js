@@ -1,5 +1,5 @@
 "use client"
-// import { AiOutlineShopping } from "react-icons/ai";
+import { AiOutlineShopping } from "react-icons/ai";
 import { IoIosArrowDown } from "react-icons/io";
 import Link from 'next/link';
 import React, { useState } from 'react';
@@ -15,7 +15,7 @@ const Navbar = () => {
     };
 
     return (
-        <div className='bg-white shadow-md w-full z-50'>
+        <div className='bg-white shadow-md w-full z-[999]'>
 
             <Container>
                 <nav className="">
@@ -26,30 +26,30 @@ const Navbar = () => {
                         </div>
 
                         {/* Desktop Menu */}
-                        <div className="hidden md:flex space-x-6 ">
+                        <div className="relative group hidden md:flex space-x-6 ">
                             {/* Dropdowns */}
-                            <div className="relative group ">
+                            <div className="">
                                 <button onClick={() => handleDropdown('courses')} className="hover:text-teal-500 flex items-center gap-x-1">Courses <IoIosArrowDown /> </button>
-                                <div className={`absolute left-0 ${dropdown === 'courses' ? 'group-hover:block' : 'hidden'} bg-white shadow-lg rounded-md max-w-max py-2`}>
+                                <div className={`absolute left-0 z-50 ${dropdown === 'courses' ? 'group-hover:block' : 'hidden'} bg-white shadow-lg rounded-md max-w-max py-2`}>
                                     <Link href="/course1" className="block px-4 py-2 hover:bg-teal-100">Course 1</Link>
                                     <Link href="/course2" className="block px-4 py-2 hover:bg-teal-100">Course 2</Link>
                                     <Link href="/course3" className="block px-4 py-2 hover:bg-teal-100">Course 3</Link>
                                 </div>
                             </div>
 
-                            <div className="relative group">
+                            <div className="">
                                 <button onClick={() => handleDropdown('instructor')} className="hover:text-teal-500 flex items-center gap-x-1">Instructors <IoIosArrowDown /></button>
-                                <div className={`absolute left-0 ${dropdown === 'instructor' ? 'group-hover:block' : 'hidden'} bg-white shadow-lg rounded-md py-2`}>
+                                <div className={`absolute left-24 z-50 ${dropdown === 'instructor' ? 'group-hover:block' : 'hidden'} bg-white shadow-lg rounded-md py-2`}>
                                     <Link href="/instructor1" className="block px-4 py-2 hover:bg-teal-100">Instructor 1</Link>
                                     <Link href="/instructor2" className="block px-4 py-2 hover:bg-teal-100">Instructor 2</Link>
                                 </div>
                             </div>
 
-                            <div className="relative group">
+                            <div className="">
                                 <button onClick={() => handleDropdown('blogs')} className="hover:text-teal-500 flex items-center gap-x-1">Blog <IoIosArrowDown /></button>
-                                <div className={`absolute left-0 ${dropdown === 'blogs' ? 'group-hover:block' : 'hidden'} bg-white shadow-lg rounded-md py-2`}>
+                                <div className={`absolute left-52 z-50 ${dropdown === 'blogs' ? 'group-hover:block' : 'hidden'} bg-white shadow-lg rounded-md max-w-max py-2`}>
                                     <Link href="/blog1" className="block px-4 py-2 hover:bg-teal-100">Blog 1</Link>
-                                    <Link href="/blog2" className="block px-4 py-2 hover:bg-teal-100">Blog 2</Link>
+                                    <Link href="/blog2" className="block px-4 max-w-max py-2 hover:bg-teal-100">Blog 2</Link>
                                     <Link href="/blog2" className="block px-4 py-2 hover:bg-teal-100">Blog 3</Link>
                                 </div>
                             </div>
@@ -58,8 +58,14 @@ const Navbar = () => {
                             <Link href="/contact" className="hover:text-teal-500">Contact</Link>
                         </div>
 
+                        {/* logo and cart */}
+                        <div className="flex items-center gap-x-2">
+                            <AiOutlineShopping className="text-3xl"></AiOutlineShopping>
+                            <button className="text-lg text-white bg-primary px-6 py-2 rounded-full">Login</button>
+                        </div>
+
                         {/* Mobile Menu Icon */}
-                        <div className="md:hidden">
+                        <div className="lg:hidden">
                             <button
                                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                                 className="focus:outline-none"
