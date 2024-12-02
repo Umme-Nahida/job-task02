@@ -1,6 +1,7 @@
 "use-client"
 
 import Banner from "./Components/Banner/page";
+import Courses from "./Components/Courses/page";
 import Navbar from "./Components/Navbar/page";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
        <div>
         <Navbar></Navbar> 
         <Banner></Banner>
+        <Courses></Courses>
        </div>
     </main>
   );
