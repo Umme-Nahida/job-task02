@@ -1,0 +1,63 @@
+[
+    {
+      "id": "CUST001",
+      "name": "John Doe",
+      "image": "https://i.ibb.co.com/FJ71DJ8/user01.png",
+      "text": "A fantastic platform with a wide variety of health and wellness courses. The instructors are top-notch, and the content is very engaging"
+    },
+    {
+      "id": "CUST002",
+      "name": "Jane Smith",
+      "image": "https://i.ibb.co.com/FJ71DJ8/user01.png",
+      "text": "The mindfulness courses have helped me manage stress better and find balance in my daily life. The guided meditations are a highlight! The courses are well worth the investment and have made a positive impact on my life."
+    },
+    {
+      "id": "CUST003",
+      "name": "Emily Johnson",
+      "image": "https://i.ibb.co.com/FJ71DJ8/user01.png",
+      "text": "A fantastic platform with a wide variety of health and wellness courses. The instructors are top-notch, and the content is very engaging"
+    },
+    {
+      "id": "CUST004",
+      "name": "Michael Brown",
+      "image": "https://i.ibb.co.com/FJ71DJ8/user01.png",
+      "text": "It's not just about physical health but mental and emotional well-being too. Fast delivery and excellent customer support. Thank you!"
+    },
+    {
+      "id": "CUST005",
+      "name": "Sarah Davis",
+      "image": "https://i.ibb.co.com/FJ71DJ8/user01.png",
+      "text": "I love the flexibility of the courses. I can learn at my own pace and revisit the material whenever I need to"
+    },
+    {
+      "id": "CUST006",
+      "name": "Chris Wilson",
+      "image": "https://i.ibb.co.com/FJ71DJ8/user01.png",
+      "text": "A fantastic platform with a wide variety of health and wellness courses. The instructors are top-notch, and the content is very engaging."
+    },
+    {
+      "id": "CUST007",
+      "name": "Jessica Lee",
+      "image": "https://i.ibb.co.com/FJ71DJ8/user01.png",
+      "text": "Exceptional experience every time! Highly recommend."
+    },
+    {
+      "id": "CUST008",
+      "name": "David Martinez",
+      "image": "https://i.ibb.co.com/FJ71DJ8/user01.png",
+      "text": "I appreciate the attention to detail and friendly staff. Amazing!"
+    },
+    {
+      "id": "CUST009",
+      "name": "Sophia Anderson",
+      "image": "https://i.ibb.co.com/FJ71DJ8/user01.png",
+      "text": "Best products on the market! Will definitely return."
+    },
+    {
+      "id": "CUST010",
+      "name": "James Taylor",
+      "image": "https://i.ibb.co.com/FJ71DJ8/user01.png",
+      "text": "The quality is unmatched. Excellent overall!"
+    }
+  ]
+  
