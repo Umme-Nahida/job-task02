@@ -14,10 +14,10 @@ const Banner = () => {
                     <p className="rating">4.9 (566)</p>
                     <h1 className="title">Platform Powering Health and Wellness</h1>
                     <h2 className="subtitle">
-                        We're restoring home as the primary place of personal well-being
+                        We&apos;re restoring home as the primary place of personal well-being
                     </h2>
                     <p className="description">
-                        Health is not just about what you're eating. It's also about what you're thinking and saying
+                        Health is not just about what you&apos;re eating. It&apos;s also about what you&apos;re thinking and saying
                     </p>
                     <div className="button-container">
                         <button className="browse-button">Browse Courses</button>
