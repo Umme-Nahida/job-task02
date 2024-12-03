@@ -24,14 +24,14 @@ const Card = ({ item }) => {
                     {/* course rating */}
                     <div className="flex items-center justify-start gap-x-1">
                         <h2 className="text-center text-xl font-medium">$199.99</h2>
-                        <p className=" p-2 text-center text-sm">{item.rating} ({item?.reviews})</p>
+                        <p className=" p-2 text-center text-sm">{item?.rating} ({item?.reviews})</p>
                     </div>
                 </div>
 
                 <div>
                     {/* time & lesson */}
                     <div className="flex items-center justify-start gap-x-3 mb-3">
-                        <h2 className="text-center text-lg font-medium flex items-center gap-1"><FaClock />{item.duration}</h2>
+                        <h2 className="text-center text-lg font-medium flex items-center gap-1"><FaClock />{item?.duration}</h2>
                         |
                         <p className="text-center text-lg flex items-center gap-x-1">
                             <MdOutlineMenuBook />

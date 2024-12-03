@@ -8,7 +8,7 @@ const ReviewCard = ({ item,data,index }) => {
     return (
         <div
         style={{
-            animationDelay: `calc(30s / ${data.length} * (${data.length} - ${index + 1}) * -1)`,
+            animationDelay: `calc(30s / ${data?.length} * (${data?.length} - ${index + 1}) * -1)`,
           }}
         className='slide'>
             {/* customer info */}
