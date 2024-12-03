@@ -8,9 +8,10 @@ const Card = ({ item }) => {
     console.log(item)
     return (
         <div>
-            <div className="w-full max-w-md space-y-8 rounded-lg bg-white p-5 shadow-lg dark:bg-[#18181B]">
+            <div 
+            className="carousel-item w-full max-w-md space-y-8 rounded-lg bg-white p-5 shadow-lg dark:bg-[#18181B]">
                 <div>
-                    <Image width={400} height={300} className="h-[300px] w-full rounded-lg bg-gray-600 object-cover" src={item?.image} alt="card navigate ui" />
+                    <Image width={400} height={300} className="h-[200px] w-full rounded-lg bg-gray-600 object-cover" src={item?.image} alt="card navigate ui" />
                     <div className="flex items-end justify-start gap-x-3 mt-5">
                         <p className="rounded-lg bg-yellow-200 p-2 text-center text-sm text-black border border-borderPrimary ">{item?.level} </p>
                         <p className="rounded-lg bg-lime-200 p-2 text-center text-sm text-black border border-light">{item?.category}</p>

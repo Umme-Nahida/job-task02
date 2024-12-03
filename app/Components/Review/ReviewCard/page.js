@@ -1,11 +1,16 @@
 import Image from 'next/image';
 import React from 'react';
 import { FaQuoteLeft } from "react-icons/fa";
+import '../review.css'
 
 
-const ReviewCard = ({ item }) => {
+const ReviewCard = ({ item,data,index }) => {
     return (
-        <div className='bg-gray-50 p-8 border border-secondary rounded-lg'>
+        <div
+        style={{
+            animationDelay: `calc(30s / ${data.length} * (${data.length} - ${index + 1}) * -1)`,
+          }}
+        className='slide'>
             {/* customer info */}
             <div className='flex items-start justify-between '>
                 <div>
