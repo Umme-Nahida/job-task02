@@ -21,8 +21,8 @@ const Review = () => {
     
 
     return (
-        <div>
-            <h1 className='text-xl md:text-xl lg:text-2xl flex justify-center py-10'>Learners love EduPath. See why they rate us 4.9 out of 5</h1>
+        <div className='review-section pb-16'>
+            <h1 className='review-heading'>Learners love EduPath. See why they rate us 4.9 out of 5</h1>
 
             {/* review card */}
             <div className='slider'>

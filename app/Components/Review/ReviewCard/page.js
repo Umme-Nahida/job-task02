@@ -2,6 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import { FaQuoteLeft } from "react-icons/fa";
 import '../review.css'
+import './reviewCard.css'
 
 
 const ReviewCard = ({ item,data,index }) => {
@@ -12,22 +13,22 @@ const ReviewCard = ({ item,data,index }) => {
           }}
         className='slide'>
             {/* customer info */}
-            <div className='flex items-start justify-between '>
+            <div className='customer-info'>
                 <div>
                     <Image
                         src={item?.image}
-                         className='rounded-full '
+                         className='customer-image '
                         width={50}
                         height={50}
                         alt="Picture of the author" />
                     <h1 className='text-xl md:text-lg lg:text-xl mt-2'>{item?.name} </h1>
                 </div>
                 {/* quote */}
-                 <FaQuoteLeft className='text-secondary text-xl lg:text-2xl'></FaQuoteLeft>
+                 <FaQuoteLeft className='customer-name'></FaQuoteLeft>
             </div>
 
             {/* review text */}
-            <div className='text-sm mt-5'>
+            <div className='review-text'>
                 <p>{item?.text} </p>
             </div>
         </div>

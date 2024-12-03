@@ -20,11 +20,36 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.carousel-item{
-    margin: 0 10px;
-} 
 
 /* added custom css */
+/* Review Section */
+.review-section {
+  padding-bottom: 4rem;
+  text-align: center;
+}
+
+.review-heading {
+  font-size: 1.25rem;
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 1000px;
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  .review-heading {
+      font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .review-heading {
+      font-size: 2rem;
+      padding: 2.5rem 0;
+  }
+}
+
+
 /* Slider Wrapper */
 .slider {
   width: 90%;

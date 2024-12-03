@@ -6,7 +6,7 @@ import Container from '../Container/page';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
-import './courses.css'
+import './carousel.css'
 
 const Courses = () => {
     const [courses, setCourses] = useState([])
