@@ -15,10 +15,10 @@ const Banner = () => {
                         Platform Powering Health and Wellness
                     </h1>
                     <h2 className="text-lg lg:text-xl text-gray-700">
-                        We’re restoring home as the primary place of personal well-being
+                        We&apos;re restoring home as the primary place of personal well-being
                     </h2>
                     <p className="text-sm lg:text-base text-gray-500">
-                        Health is not just about what you're eating. It's also about what you're thinking and saying
+                        Health is not just about what you&apos;re eating. It&apos;s also about what you&apos;re thinking and saying
                     </p>
                     <div className="flex flex-col lg:flex-row gap-3 justify-center lg:justify-start">
                         <button className="bg-primary text-white px-6 py-2 rounded-lg shadow-lg hover:bg-primary">
