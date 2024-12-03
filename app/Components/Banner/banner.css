@@ -46,16 +46,19 @@
 }
 
 .subtitle {
+    margin-top: 10px;
     font-size: 1.25rem;
     color: #4A4A4A;
 }
 
 .description {
+    margin-top: 10px;
     font-size: 0.9rem;
     color: gray;
 }
 
 .button-container {
+    margin-top: 15px;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -70,7 +73,7 @@
 }
 
 .browse-button {
-    background-color: #007BFF;
+    background-color: #287279;
     color: white;
     padding: 0.5rem 1.5rem;
     border-radius: 0.5rem;
@@ -80,13 +83,13 @@
 }
 
 .browse-button:hover {
-    background-color: #0056b3;
+    background-color: #287279;
 }
 
 .get-started-button {
     background-color: #f5f5f5;
-    color: #007BFF;
-    border: 1px solid #007BFF;
+    color: #287279;
+    border: 1px solid #287279;
     padding: 0.5rem 1.5rem;
     border-radius: 0.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -95,7 +98,7 @@
 }
 
 .get-started-button:hover {
-    background-color: #007BFF;
+    background-color: #287279;
     color: white;
 }
 

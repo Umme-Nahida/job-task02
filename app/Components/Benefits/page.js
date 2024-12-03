@@ -24,14 +24,14 @@ const Benefits = () => {
                     <div className="toggle-container">
                         {/* <!-- Toggle 01 --> */}
                         <div className="toggle-header" onClick={() => handleToggle(0)}>
-                            <button className="toggle-button" id="toggle-btn-0">
+                            <button className={`button ${activeIndex === 1 ? "button--active" : "button--inactive"}`} id="toggle-btn-0">
                                 <span className="checkmark">&#10003;</span>
                             </button>
                             <h1>Personalized routine</h1>
                         </div>
                         {
                             activeIndex === 0 &&
-                            <div className={`button ${activeIndex === 1 ? "button--active" : "button--inactive"}`} id="toggle-content-0">
+                            <div className="toggle-content"  id="toggle-content-0">
                                 <p>We design personalized routines tailored to your needs to help you achieve your goals effectively and efficiently.</p>
                             </div>
                         }
