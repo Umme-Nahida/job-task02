@@ -6,6 +6,7 @@ import Container from '../Container/page';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
+import './courses.css'
 
 const Courses = () => {
     const [courses, setCourses] = useState([])
@@ -33,7 +34,7 @@ const Courses = () => {
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 2,
                     slidesToScroll: 3,
                 }
             },
@@ -65,36 +66,37 @@ const Courses = () => {
 
 
     return (
-        <div className='py-20'>
-            {/* courses content here */}
-            <Container>
-                <div className='flex flex-col lg:flex-row items-end justify-between gap-x-5 pb-16'>
-                    <div className='lg:w-3/6'>
-                        <h1 className='text-lg md:text-xl lg:text-2xl mb-3'>Our popular courses</h1>
-                        <p>By taking proactive steps to nurture mental health, we can enhance our quality of life, build resilience, and foster a sense of inner peace and balance</p>
-                    </div>
-                    <div className='flex items-center gap-x-2 text-3xl'>
-                        <button onClick={slideLeft}><IoIosArrowDropleft /> </button>
-                        <button onClick={slideRight}><IoIosArrowDropright /> </button>
-                    </div>
-                </div>
-
-
-                {/* courses card */}
-                <div>
-                    <div>
-                        <Slider ref={sliderRef} {...settings}>
-                            {
-                                courses?.map(item => (
-                                    <Card key={item?.id} item={item} ></Card>
-                                ))
-                            }
-                        </Slider>
-
-                    </div>
-                </div>
-            </Container>
+        <div className="popular-courses-section">
+    {/* Courses Content */}
+    <Container>
+        <div className="courses-header">
+            <div className="header-text">
+                <h1 className="courses-title">Our popular courses</h1>
+                <p className="courses-description">
+                    By taking proactive steps to nurture mental health, we can enhance our quality of life, build resilience, and foster a sense of inner peace and balance.
+                </p>
+            </div>
+            <div className="navigation-buttons">
+                <button className="arrow-button" onClick={slideLeft}>
+                    <IoIosArrowDropleft />
+                </button>
+                <button className="arrow-button" onClick={slideRight}>
+                    <IoIosArrowDropright />
+                </button>
+            </div>
         </div>
+
+        {/* Courses Card */}
+        <div className="courses-slider">
+            <Slider ref={sliderRef} {...settings}>
+                {courses?.map((item) => (
+                    <Card key={item?.id} item={item} />
+                ))}
+            </Slider>
+        </div>
+    </Container>
+</div>
+
     );
 };
 

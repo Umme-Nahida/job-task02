@@ -1,0 +1,127 @@
+/* General Container Styling */
+.benefits-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 80px 20px;
+}
+
+.benefits-text {
+    flex: 1;
+}
+
+.benefits-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.toggle-container {
+    overflow: hidden;
+}
+
+.toggle-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-top: 2px solid #ddd;
+    padding: 15px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle-header:hover {
+    background-color: #f7f7f7;
+}
+
+.toggle-button {
+    background-color: #ccc;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    width: 25px;
+    height: 25px;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.toggle-button.active {
+    background-color: #f39c12;
+}
+
+.toggle-content {
+    padding: 20px;
+    background-color: #f9f9f9;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.toggle-content.active {
+    max-height: 200px; /* Adjust as needed */
+}
+
+.learn-more-button {
+    border: 2px solid #f39c12;
+    border-radius: 25px;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #f39c12;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    margin-top: 20px;
+}
+
+.learn-more-button:hover {
+    background-color: #f39c12;
+    color: white;
+}
+
+/* Image Section */
+/* Default hidden for small screens */
+.benefits-image {
+    flex: 1;
+    display: none; 
+}
+
+.image-container {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.main-image {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+}
+
+.frame-image {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-90%, -80%);
+    width: 80px;
+    height: 80px;
+}
+
+/* Media Queries for Larger Screens */
+@media (min-width: 1024px) {
+    .benefits-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .benefits-image {
+        display: block;
+    }
+}

@@ -1,0 +1,77 @@
+/* Popular Courses Section */
+.popular-courses-section {
+    padding: 5rem 1rem;
+}
+
+/* Courses Header */
+.courses-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+@media (min-width: 1024px) {
+    .popular-courses-section{
+        padding: 1rem 1rem;
+    }
+    .courses-header {
+        width: 100%;
+        flex-direction: row;
+        align-items: flex-end;
+        padding: 0;
+        padding-bottom: 4rem;
+    }
+}
+
+.header-text {
+    width: 100%;
+}
+
+.courses-title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .courses-title {
+        font-size: 1.5rem;
+    }
+}
+
+.courses-description {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Navigation Buttons */
+.navigation-buttons {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+    .navigation-buttons {
+        font-size: 2rem;
+    }
+}
+
+.arrow-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.arrow-button:hover {
+    transform: scale(1.1);
+}
+
+/* Courses Slider */
+.courses-slider {
+    margin-top: 2rem;
+}
